@@ -20,7 +20,19 @@ export default hopeTheme({
     repo: "vuepress-theme-hope/vuepress-theme-hope",
     // 文档目录
     docsDir: "src",
+    /**
+     * "switch": 在深色模式，浅色模式和自动之间切换 (默认)
+     * "toggle": 在深色模式和浅色模式之间切换
+     * "auto": 自动根据用户设备主题或当前时间决定是否应用深色模式
+     * "enable": 强制深色模式
+     * "disable": 禁用深色模式
+     */
+    darkmode: "toggle",
 
+    // 全屏
+    fullscreen: true,
+    // 纯净模式
+    // pure: true,
     blog: {
         medias: {
             Baidu: "https://example.com",
