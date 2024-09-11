@@ -1,25 +1,32 @@
-import { defineUserConfig } from "vuepress";
+import {defineUserConfig} from "vuepress";
 
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/blog/",
+    // 基础路径
+    base: "/blog/",
+    lang: 'zh-CN',
+    // 默认站点语言为英文
+    // lang: 'en-US',
 
-  locales: {
-    "/": {
-      lang: "en-US",
-      title: "Blog Demo",
-      description: "A blog demo for vuepress-theme-hope",
+    // favicon 图标
+    head: [['link', {rel: 'icon', href: 'favicon.ico'}]],
+    locales: {
+        "/": {
+            lang: "zh-CN",
+            title: "我的博客",
+            description: "vuepress-theme-hope 的博客演示",
+        },
+        "/en/": {
+            lang: "en-US",
+            title: "My blog",
+            description: "A blog demo for vuepress-theme-hope",
+        },
+
     },
-    "/zh/": {
-      lang: "zh-CN",
-      title: "博客演示",
-      description: "vuepress-theme-hope 的博客演示",
-    },
-  },
+    // 主题
+    theme,
 
-  theme,
-
-  // Enable it with pwa
-  // shouldPrefetch: false,
+    // Enable it with pwa
+    // shouldPrefetch: false,
 });
