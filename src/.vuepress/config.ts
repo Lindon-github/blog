@@ -1,16 +1,16 @@
-import {defineUserConfig} from "vuepress";
+import { defineUserConfig } from "vuepress";
 
 import theme from "./theme.js";
 
 export default defineUserConfig({
     // 基础路径
-    base: "/blog/",
+    base: "/",
     lang: 'zh-CN',
     // 默认站点语言为英文
     // lang: 'en-US',
 
     // favicon 图标
-    head: [['link', {rel: 'icon', href: 'favicon.ico'}]],
+    head: [['link', { rel: 'icon', href: 'favicon.ico' }]],
     locales: {
         "/": {
             lang: "zh-CN",

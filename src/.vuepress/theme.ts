@@ -1,7 +1,7 @@
-import {hopeTheme} from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope";
 
-import {enNavbar, zhNavbar} from "./navbar/index.js";
-import {enSidebar, zhSidebar} from "./sidebar/index.js";
+import { enNavbar, zhNavbar } from "./navbar/index.js";
+import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
     // 网站部署主机名
@@ -17,10 +17,22 @@ export default hopeTheme({
 
     logo: "https://theme-hope-assets.vuejs.press/logo.svg",
     // Repo: 项目仓库
-    repo: "vuepress-theme-hope/vuepress-theme-hope",
+    repo: "Lindon-github/blog",
     // 文档目录
     docsDir: "src",
+    /**
+     * "switch": 在深色模式，浅色模式和自动之间切换 (默认)
+     * "toggle": 在深色模式和浅色模式之间切换
+     * "auto": 自动根据用户设备主题或当前时间决定是否应用深色模式
+     * "enable": 强制深色模式
+     * "disable": 禁用深色模式
+     */
+    darkmode: "toggle",
 
+    // 全屏
+    fullscreen: true,
+    // 纯净模式
+    // pure: true,
     blog: {
         medias: {
             Baidu: "https://example.com",
@@ -150,11 +162,11 @@ export default hopeTheme({
             stylize: [
                 {
                     matcher: "Recommended",
-                    replacer: ({tag}) => {
+                    replacer: ({ tag }) => {
                         if (tag === "em")
                             return {
                                 tag: "Badge",
-                                attrs: {type: "tip"},
+                                attrs: { type: "tip" },
                                 content: "Recommended",
                             };
                     },

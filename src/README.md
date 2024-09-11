@@ -1,12 +1,19 @@
 ---
 home: true
-layout: BlogHome
+# layout: BlogHome
 icon: home
 title: 博客主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: 你博客的名称
 heroFullScreen: true
 tagline: 你可以在这里放置你的口号与标语
+bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
+bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+actions:
+  - text: 快速上手
+    link:  /demo/
+    icon: signs-post
+    type: primary
 #projects:
 #  - icon: project
 #    name: 项目名称
@@ -38,7 +45,8 @@ tagline: 你可以在这里放置你的口号与标语
 #    desc: 自定义详细介绍
 #    link: https://你的自定义链接
 
-footer: 自定义你的页脚文字
+copyright: false
+footer: MIT LICENSE | Copyright © 2024-present Lindon
 ---
 
 [//]: # (这是一个博客主页的案例。)
