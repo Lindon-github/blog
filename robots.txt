@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://lindon-github.github.io/blog/sitemap.xml
+Sitemap: https://lindon-github.github.io/sitemap.xml
