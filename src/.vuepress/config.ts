@@ -4,7 +4,7 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
     // 基础路径
-    base: "/",
+    base: "/blog/",
     lang: 'zh-CN',
     // 默认站点语言为英文
     // lang: 'en-US',
