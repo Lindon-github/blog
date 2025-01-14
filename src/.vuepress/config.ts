@@ -1,8 +1,16 @@
-import { defineUserConfig } from "vuepress";
+import {defineUserConfig} from "vuepress";
 
 import theme from "./theme.js";
+import {getDirname, path} from 'vuepress/utils';
+import {slimsearchPlugin} from "@vuepress/plugin-slimsearch";
 
+const __dirname = getDirname(import.meta.url);
+const SrcPath = path.resolve(__dirname, '../');
 export default defineUserConfig({
+    alias: {
+        '@components': path.resolve(__dirname, 'components'),
+        '@src': SrcPath,
+    },
     // 基础路径
     base: "/blog/",
     lang: 'zh-CN',
@@ -10,7 +18,7 @@ export default defineUserConfig({
     // lang: 'en-US',
 
     // favicon 图标
-    head: [['link', { rel: 'icon', href: 'favicon.ico' }]],
+    head: [['link', {rel: 'icon', href: 'favicon.ico'}]],
     locales: {
         "/": {
             lang: "zh-CN",
@@ -26,7 +34,13 @@ export default defineUserConfig({
     },
     // 主题
     theme,
-
+    // 插件
+    plugins: [
+        slimsearchPlugin({
+            // 已启用全文搜索
+            indexContent: true,
+        }),
+    ],
     // Enable it with pwa
-    // shouldPrefetch: false,
+    shouldPrefetch: false,
 });

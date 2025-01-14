@@ -11,8 +11,16 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
+    "@types/bun": "^1.1.14",
     "@vuepress/bundler-vite": "2.0.0-rc.14",
+    "@vuepress/plugin-slimsearch": "2.0.0-rc.70",
+    "aplayer": "^1.10.1",
+    "art-template": "^4.13.2",
+    "axios": "^1.7.9",
+    "sass-embedded": "^1.83.1",
+    "store": "^2.0.12",
     "vue": "^3.4.31",
+    "vue-router": "^4.5.0",
     "vuepress": "2.0.0-rc.14",
     "vuepress-theme-hope": "2.0.0-rc.52"
   }

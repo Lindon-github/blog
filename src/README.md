@@ -7,8 +7,12 @@ heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: 你博客的名称
 heroFullScreen: true
 tagline: 你可以在这里放置你的口号与标语
-bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+description: 博客,记录,分享
+article: false
+index: false
+containerClass: mo7-blog-home
+#bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
+#bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 actions:
   - text: 快速上手
     link:  /demo/
@@ -45,12 +49,17 @@ actions:
 #    desc: 自定义详细介绍
 #    link: https://你的自定义链接
 
-copyright: false
-footer: MIT LICENSE | Copyright © 2024-present Lindon
+#copyright: false
+footer: MIT LICENSE | Copyright © 2025-present Lindon
 ---
+<div id="mo7-blog-hero-content">
 
-[//]: # (这是一个博客主页的案例。)
-
-[//]: # (要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。)
-
-[//]: # (相关配置文档请见 [博客主页]&#40;https://theme-hope.vuejs.press/zh/guide/blog/home.html&#41;。)
+</div>
+<div id="mo7-hitokoto-wrapper">
+  <div class="word">
+    <div class="left">『</div>
+    <span id="hitokoto_text"> 简单快乐，理应如此。 </span>
+    <div class="right">』</div>
+  </div>
+  <div id="hitokoto_author">——「墨七」</div>
+</div>

@@ -1,1 +1,72 @@
 // place your custom styles here
+//在此处放置您的自定义样式 你可以在这里添加额外的样式，或者覆盖默认样式：
+.none {
+  width: 0;
+  height: 0;
+  user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+  display: none;
+}
+
+// 自定义的页脚
+.vp-footer-wrapper {
+  .vp-footer {
+    display: flex;
+  }
+
+  .footer-icp {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    & > img {
+      width: 14px;
+      margin-right: 4px;
+    }
+  }
+  .footer-about {
+    padding: 2px 3px;
+    border-radius: 3px;
+    position: relative;
+    color: #fff;
+    &:hover {
+      background-color: rgba($color: #0c7bf4, $alpha: 0.8);
+    }
+  }
+}
+
+// 让内容在更宽的屏幕上可以有更宽的显示区域，嗯，宽屏补丁。
+:root {
+  --content-width: 830px;
+}
+@media screen and (min-width: 1770px) {
+  :root {
+    --content-width: calc(100vw - 15rem - 6rem - var(--sidebar-width) - 20rem);
+  }
+}
+
+// 图片合组
+
+.ImgGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: baseline;
+  width: 100%;
+  figure {
+    margin: 2px;
+  }
+}
+
+// 字体
+@font-face {
+  font-family: 'mo7_font';
+  src: url('/font/mo7_font.ttf');
+}
+
+.vp-blog-hero-title,
+.vp-site-name {
+  font-family: 'mo7_font';
+}

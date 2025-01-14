@@ -1,2 +1,6 @@
 // you can change colors here
+//你可以利用它来覆盖默认主题的预定义 SASS 变量。
 $theme-colors: #2196f3, #f26d6d, #3eaf7c, #fb9b5f;
+
+// 重定义样式变量 https://theme-hope.vuejs.press/zh/config/style.html#%E5%AD%97%E4%BD%93
+$vp-c-bg: #fafafa;
