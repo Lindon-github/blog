@@ -16,7 +16,7 @@
     "@vuepress/plugin-slimsearch": "2.0.0-rc.70",
     "aplayer": "^1.10.1",
     "art-template": "^4.13.2",
-    "axios": "^1.7.9",
+    "axios": "^1.15.2",
     "sass-embedded": "^1.83.1",
     "store": "^2.0.12",
     "vue": "^3.4.31",
